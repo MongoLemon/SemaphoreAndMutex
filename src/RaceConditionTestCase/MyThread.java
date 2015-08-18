@@ -9,7 +9,7 @@ public class MyThread implements Runnable{
 
 	private int type;
 
-	private static ReentrantLock lock = new ReentrantLock();
+	private static ReentrantLock lock = new ReentrantLock(); // make sure it is static, or there would be multiple ReentrantLock objects
 
 	public MyThread(int type) {
 		this.type = type;
